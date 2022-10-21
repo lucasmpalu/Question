@@ -1,0 +1,147 @@
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+h3 {color: #151A41;} 
+
+button
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.container-form {
+    width: 460px;
+    height: 491px;
+    background-color:#FFFFFF;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 20px rgb(135, 135, 135);
+    margin: 2rem
+}
+
+.button-x {
+    display: flex;
+    justify-content: end;
+  
+}
+
+.button-x button {
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    border: 0.001px outset rgb(255, 255, 255);
+    border-radius: 100%;
+    background: inherit;
+}
+
+.container-grid {
+    width: 100%;
+    padding: 1rem 2rem;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+row-gap: 2rem;
+}
+
+
+.title {
+    grid-column: 1 / 4;
+    text-align: start;
+}
+
+.numbers {
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.number-1, .number-2, .number-3, .number-4, .number-5 {
+    
+    border: 0.1px outset rgb(224, 209, 209);
+    border-radius: 4px;
+    height: 3rem;
+    width: 4rem;
+    background: inherit;
+    margin: 0px 0.2rem;
+    font-size: 1.25rem;
+
+}
+
+.number-1:hover, .number-2:hover, .number-3:hover, .number-4:hover, .number-5:hover {
+    background-color: #FF0099;
+}
+
+.satisfaction {
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.satisfaction p:nth-child(1) {
+    text-align: start;
+    font-size: 14px;
+    font-weight: 500;
+}
+.satisfaction p:nth-child(2) {
+    text-align: end;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.checkbox {
+    grid-column: 1 / 4;
+
+}
+
+.checkbox input {
+    transform: scale(1.5);
+    margin: 0rem 0.5rem;
+  }
+  
+  .checkbox label {
+    font-weight: 500;
+  }
+
+hr {
+    grid-column: 1 / 4;
+    border: 1px inset #FF0099;
+    width: 100%;
+}
+.button-next {
+    grid-column: 1 / 4;
+    height: 3rem;
+    border: 0.1px outset white;
+    border-radius: 5px;
+    background: inherit;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 14px;
+    }
+}
