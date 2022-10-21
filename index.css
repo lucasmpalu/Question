@@ -90,8 +90,13 @@ row-gap: 2rem;
 
 }
 
-.number-1:hover, .number-2:hover, .number-3:hover, .number-4:hover, .number-5:hover {
+.number-1:hover, .number-2:hover, .number-3:hover, .number-4:hover, .number-5:hover, .button-next:hover {
     background-color: #FF0099;
+    box-shadow: 0px 10px 15px 0.1px rgb(129, 127, 127);
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #FFFFFF;
 }
 
 .satisfaction {
